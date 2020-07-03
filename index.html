@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 80%;
+        height: 40vh;
+        margin: 10vh auto 0 auto;
+        border: darkgoldenrod 1px solid;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .activity-box {
+        width: 30%;
+        height: 100%;
+        border: steelblue 1px solid;
+        position: relative;
+        overflow: hidden;
+    }
+    .activity-mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(to top,gray,white);
+        z-index: 2;
+        opacity: 0;
+        transition: 1s;
+    }
+    .activity-mask:hover{
+        opacity: 0.65;
+        z-index: 4;
+        transition: 1s;
+    }
+    .activity-box h3{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-size: 36px;
+       line-height: 35vh;
+       position: absolute;
+        text-align: center;
+        opacity: 1;
+        z-index: 0;
+    }
+    .activity-mask:hover .act-text1{
+        z-index: 5;
+        opacity: 1;
+    }
+    .activity-mask:hover .act-text2{
+        z-index: 5;
+        opacity: 1;
+    }
+    .activity-mask:hover .act-text3{
+        z-index: 5;
+        opacity: 1;
+    }
+    .act-text a{
+        text-decoration: none;
+        color: black;
+    }
+
+    /* 第1區 塊第1區塊~~~~~~~~~~~~ */
+    /* 第1區塊 第1區塊~~~~~~~~~~~~ */
+
+    .activity-box1 .pic1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/b區.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(-40vh);
+        animation: act1-1 12s infinite linear;
+        /* animation-play-state: paused; */
+    }
+   
+    .activity-box1 .pic2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/夜間露營區.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateX(460px);
+        animation: act1-2 12s infinite linear;
+        animation-delay: 4s;
+        /* animation-play-state: paused; */
+        
+    }
+
+    .activity-box1 .pic3 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/用餐區.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(40vh);
+        animation: act1-3 12s infinite linear;
+        animation-delay: 8s;
+        /* animation-play-state: paused; */
+    }
+   
+
+    @keyframes act1-1 {
+        0%{
+            transform: translateY(-40vh);
+            z-index: 1;
+        }
+        3.5%{
+            transform: translateY(0);
+            z-index: 2;
+        }
+        35%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        39%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        40%{
+            transform: translateY(-40vh);
+            z-index: 0;
+        }
+     
+
+    }
+    @keyframes act1-2 {
+        0%{
+            transform: translateX(460PX);
+            z-index: 2;
+        }
+        3%{
+            transform: translateX(0PX);
+            z-index: 2;
+        }
+        35%{
+            transform: translateX(0PX);
+            z-index: 1;
+        }
+        39%{
+            transform: translateX(0PX);
+            z-index: 1;
+        }
+        40%{
+             transform: translateX(460PX);
+            z-index: 0;
+        }
+    }
+    @keyframes act1-3 {
+        0%{
+            transform: translateY(40vh);
+            z-index: 2;
+        }
+        3%{
+            transform: translateY(0);
+            z-index: 2;
+        }
+        35%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        39%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        40%{
+            transform: translateY(40vh);
+            z-index: 0;
+        }
+    }
+
+
+
+    /* 第2區 塊第2區塊~~~~~~~~~~~~ */
+    /* 第2區塊 第2區塊~~~~~~~~~~~~ */
+
+
+
+    .activity-box2 .pic1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/星空電影.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(-40vh);
+        animation: act2-1 12s infinite linear;
+        animation-delay: 8s;
+    }
+
+    .activity-box2 .pic2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/b區.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateX(460px);
+        animation: act2-2 12s infinite linear;
+        
+    }
+
+    .activity-box2 .pic3 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/營本部.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(40vh);
+        animation: act2-3 12s infinite linear;
+        animation-delay: 4s;
+    }
+
+    @keyframes act2-1 {
+        0%{
+            transform: translateY(-40vh);
+            z-index: 1;
+        }
+        3.5%{
+            transform: translateY(0);
+            z-index: 2;
+        }
+        35%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        39%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        40%{
+            transform: translateY(-40vh);
+            z-index: 0;
+        }
+     
+
+    }
+    @keyframes act2-2 {
+        0%{
+            transform: translateX(460PX);
+            z-index: 2;
+        }
+        3%{
+            transform: translateX(0PX);
+            z-index: 2;
+        }
+        35%{
+            transform: translateX(0PX);
+            z-index: 1;
+        }
+        39%{
+            transform: translateX(0PX);
+            z-index: 1;
+        }
+        40%{
+             transform: translateX(460PX);
+            z-index: 0;
+        }
+    }
+    @keyframes act2-3 {
+        0%{
+            transform: translateY(40vh);
+            z-index: 2;
+        }
+        3%{
+            transform: translateY(0);
+            z-index: 2;
+        }
+        35%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        39%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        40%{
+            transform: translateY(40vh);
+            z-index: 0;
+        }
+    }
+
+
+    /* 第三區塊第三區塊~~~~~~~~~~~~ */
+    /* 第三區塊第三區塊~~~~~~~~~~~~ */
+
+
+
+    .activity-box3 .pic1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/b區-2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(-40vh);
+        animation: act3-1 12s infinite linear;
+        animation-delay: 8s;
+    }
+
+    .activity-box3 .pic2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/衛浴2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateX(460px);
+        animation: act3-2 12s infinite linear;
+        animation-delay: 4s;
+    }
+
+    .activity-box3 .pic3 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("img/星空電影.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(40vh);
+        animation: act3-3 12s infinite linear;
+        
+    }
+
+    @keyframes act3-1 {
+        0%{
+            transform: translateY(-40vh);
+            z-index: 1;
+        }
+        3.5%{
+            transform: translateY(0);
+            z-index: 2;
+        }
+        35%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        39%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        40%{
+            transform: translateY(-40vh);
+            z-index: 0;
+        }
+     
+
+    }
+    @keyframes act3-2 {
+        0%{
+            transform: translateX(460PX);
+            z-index: 2;
+        }
+        3%{
+            transform: translateX(0PX);
+            z-index: 2;
+        }
+        35%{
+            transform: translateX(0PX);
+            z-index: 1;
+        }
+        39%{
+            transform: translateX(0PX);
+            z-index: 1;
+        }
+        40%{
+             transform: translateX(460PX);
+            z-index: 0;
+        }
+    }
+    @keyframes act3-3 {
+        0%{
+            transform: translateY(40vh);
+            z-index: 2;
+        }
+        3%{
+            transform: translateY(0);
+            z-index: 2;
+        }
+        35%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        39%{
+            transform: translateY(0);
+            z-index: 1;
+        }
+        40%{
+            transform: translateY(40vh);
+            z-index: 0;
+        }
+    }
+    footer{
+        width: 200px;
+        height: 200px;
+        background: antiquewhite;
+        position: relative;
+    }
+    footer:hover div:nth-child(1){
+        background-color: rgb(248, 114, 4);
+    }
+    footer:hover div:nth-child(2){
+        background-color: rgb(77, 4, 248);
+    }
+    footer div:nth-child(1){
+        width: 50%;
+        height: 50%;
+        background-color: green;
+        position: absolute;
+    }
+    footer div:nth-child(2){
+        width: 50%;
+        height: 50%;
+        background-color: rgb(128, 119, 0);
+        position: absolute;
+        top: 50%;
+    }
+ 
+</style>
+
+<body>
+    <div class="container">
+        <div class="activity-box activity-box1">
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="activity-mask">
+                <h3 class="act-text"><a href="">野溪生態</a></h3>
+            </div>
+            
+        </div>
+        <div class="activity-box activity-box2">
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="activity-mask">
+                <h3 class="act-text"><a href="">Pizza DIY</a></h3>
+            </div>
+        </div>
+        <div class="activity-box activity-box3">
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="activity-mask">
+                <h3 class="act-text"><a href="">生態體驗</a></h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+
+</html>
